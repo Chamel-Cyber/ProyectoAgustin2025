@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none ;
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(101, 240, 198);
+}
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgb(203, 33, 18,1)0%,
+        rgb(133, 7, 165,1)70%
+    );
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #dedede;
+    display: block;
+    font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+    color: red;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+h1 {
+    margin: 80px 0 0 350px;
+}
+@media(max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(203,33,18,1)0%,
+            rgba(133,7,165,1)70%
+        );
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+.big-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: arial, sans-serif;
+}
+th, td {
+    border: 1px solid red; 
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: blue; color: gold;
+}
+.big-table th .big-table td{
+    padding: 15px;
+    border: 1px solid red;
+}
+.LogoS {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10 px;
+}
